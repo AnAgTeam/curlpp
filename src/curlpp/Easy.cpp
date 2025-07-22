@@ -38,6 +38,9 @@ curlpp::Easy::Easy(std::unique_ptr<internal::CurlHandle> handle)
     : mCurl(std::move(handle))
 {}
 
+curlpp::Easy::Easy(Easy&& other) : mCurl(std::move(other.mCurl)), mOptions(std::move(other.mOptions)) {
+	
+}
 
 curlpp::Easy::~Easy()
 {}

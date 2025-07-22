@@ -37,6 +37,9 @@ namespace internal
 OptionList::OptionList()
 {}
 
+OptionList::OptionList(OptionList&& other) : mOptions(std::move(other.mOptions))
+{}
+
 OptionList::OptionList(const OptionList & rhs)
 {
    insert(rhs.mOptions);

@@ -54,6 +54,7 @@ namespace internal
 		* This construction initialize an empty list of options.
 		*/
 		OptionList();
+		OptionList(OptionList&& other);
 
 		/**
 		* This contructor initialize his list by calling the

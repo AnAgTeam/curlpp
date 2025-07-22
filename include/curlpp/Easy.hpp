@@ -56,6 +56,7 @@ namespace curlpp
 		* some option set, but we don't care about them.
 		*/
 		Easy(std::unique_ptr<internal::CurlHandle> handle);
+		Easy(Easy&& other);
 		virtual ~Easy();
 
 		/**

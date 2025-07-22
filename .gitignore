@@ -52,3 +52,5 @@ bin/
 /examples/Examples/x64/Debug
 projects/
 /graph_info.json
+
+/.vs/

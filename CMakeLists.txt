@@ -1,3 +1,9 @@
+# without this vcpkg won't try to install dependencies, then manually setted toolchain
+if (CMAKE_TOOLCHAIN_FILE MATCHES "vcpkg.cmake")
+	message(STATUS "Found vcpkg")
+	include(${CMAKE_TOOLCHAIN_FILE})
+endif()
+
 project(curlpp)
 
 
